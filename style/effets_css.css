@@ -1,0 +1,67 @@
+*{ 	
+	font-family:"Comic Sans MS", Arial;
+}
+
+body {
+	background-image: url("../img/fond2.jpg");
+	background-position: 100% 100%; /* le fond prend tout l'écran */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+header{
+	border: 5px;
+	border-color: white;
+	border-style: solid;
+	font-size: 35px;
+	text-shadow: 2px 2px 4px red;
+	box-shadow: 4px 6px 10px white;
+}
+
+h1 {	
+	color:red;
+	font-style: bold underline;
+	text-align: center;
+}
+
+section{
+	text-align: justify;
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	display: block;
+	color: white;
+	font-size: 15px;
+}
+
+/*Liens*/
+a:visited{ /*les liens avec <a> restent bleus même après avoir déjà utilisé le lien*/
+	color: #2497FB; 
+} 
+a{
+	color: #2497FB;
+}
+
+/*LES CLASS*/
+.haut_page { /*Remonter en haut de la page*/
+	position: fixed;
+}
+.avec_marge_bottom{ /*Laisser de la place en bas de page*/
+	padding-bottom: 50px;
+}
+.image {
+	text-align: center;
+}
+
+/*Menu Horizontal*/
+.menu_horizontal li{
+	list-style: none;
+	display: inline;
+	padding-left :10px;
+	font-size: 15px;
+}
+.menu_horizontal {
+	padding-left :10px;
+	text-align: center;
+}
+	

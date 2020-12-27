@@ -1,0 +1,70 @@
+*{ /*Sélectionne TOUT*/
+	font-family:"Comic Sans MS", Arial;
+	list-style-type: none;
+}
+
+body {
+	background-image: url("../img/fond2.jpg");
+	background-position: 100% 100%; /* le fond prend tout l'écran */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+header{
+	border: 5px;
+	border-color: black;
+	border-style: solid;
+	font-size: 35px;
+	text-shadow: 2px 2px 4px red;
+	box-shadow: 4px 6px 10px black;
+}
+
+
+h1 {	
+	color:red;
+	font-style: bold;
+	text-align: center;
+}
+
+
+section{
+	text-align: justify;
+	margin-top: 50px;
+	margin-left: 190px;
+	margin-right: 210px;
+	color: white;
+	font-size: 15px;
+}
+
+/*Liens*/
+a:visited{ /*les liens avec <a> restent bleus même après avoir déjà utilisé le lien*/
+	color: #2497FB; 
+} 
+a{
+	color: #2497FB;
+}
+
+/*Menu Horizontal*/
+.menu_horizontal li{
+	list-style: none;
+	display: inline;
+	padding-left :10px;
+	font-size: 15px;
+}
+.menu_horizontal {
+	padding-left :10px;
+	text-align: center;
+}
+
+/*LES CLASS*/
+.image{	/*centrage de l'image*/
+	text-align: center;
+}
+.noms{
+	font-size: 10px;
+	float: right;
+	position: top
+}
+	
+	
+	

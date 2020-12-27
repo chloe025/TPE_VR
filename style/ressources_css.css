@@ -1,0 +1,74 @@
+*{ 	
+	font-family:"Comic Sans MS", Arial;
+	color: white;
+}
+
+body {
+	background-image: url("../img/fond2.jpg");
+	background-position: 100% 100%; /* le fond prend tout l'écran */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+header{
+	border: 5px;
+	border-color: white;
+	border-style: solid;
+	font-size: 35px;
+	text-shadow: 2px 2px 4px red;
+	box-shadow: 4px 6px 10px white;
+}
+
+h1 {	color:red;
+		font-style: bold underline;
+		text-align: center;
+}
+
+.image{
+	position: absolute;
+	margin-top: -220px;
+	margin-left: 640px;
+}
+
+/*Liens*/
+a:visited{ /*les liens avec <a> restent bleus même après avoir déjà utilisé le lien*/
+     color: #2497FB; 
+} 
+a{
+	color: #2497FB;
+}
+
+/*Menu Horizontal*/
+.menu_horizontal li{
+	list-style: none;
+	display: inline;
+	padding-left :10px;
+	font-size: 15px;
+}
+.menu_horizontal {
+	padding-left :10px;
+	text-align: center;
+}
+
+/*Conteneurs pour faire des colonnes avec les liens*/
+#conteneur{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 20px;
+	font-size: 15px;
+	position: relative;
+}
+.elements a:visited{ /*les liens avec <a> restent bleus même après avoir déjà utilisé le lien*/
+     color: white; 
+} 
+.elements{
+	display: inline-block;
+}
+.elements li{  /* les <li> du class="elements" seront pris*/
+	list-style-type: circle;
+}
+.elements a { /*les éléments <a> du class="elements" seront pris */
+	text-decoration: none;
+	color: white;
+}

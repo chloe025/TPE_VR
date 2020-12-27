@@ -1,0 +1,138 @@
+*{ 	
+	font-family:"Comic Sans MS", Arial;
+}
+
+body {
+	background-image: url("../img/fond2.jpg");
+	background-position: 100% 100%; /* le fond prend tout l'écran */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+header{
+	border: 5px;
+	border-color: white;
+	border-style: solid;
+	font-size: 35px;
+	text-shadow: 2px 2px 4px red;
+	box-shadow: 4px 6px 10px white;
+}
+
+h1 {	
+	color: red;
+	font-style: bold underline;
+	display: flex;
+	justify-content: center;
+}
+
+span { /*Souligner le texte avec la balise span*/
+	text-decoration: underline;
+}
+
+
+section{
+	text-align: justify;
+	font-size: 15px;
+	margin-top: 25px;
+	margin-right: 150px;
+	padding-bottom: 20px;
+	margin-left: 220px;
+	display: block;
+	color: white;
+}
+
+
+/*Liens*/
+a:visited{ /*les liens avec <a> restent bleus même après avoir déjà utilisé le lien*/
+	color: #2497FB; 
+} 
+a{
+	color: #2497FB;
+}
+
+
+/*LES CLASS*/
+.haut_page { /*Remonter en haut de la page*/
+	position: fixed;
+	
+}
+/* TEST AJOUT ANIMATION
+@keyframes monAnnimation {  définir l'animation
+	0% {transform: translateY();}
+}
+.haut_page:active { TRANSITION POUR RETOUR EN HAUT DE PAGE
+	animation-name: monAnnimation;
+	transition-duration: 1s; temps de transition
+	transition-timing-function: linear; la transition a une vitesse constente*/
+}
+.intro{
+	margin-top: 15px;
+}
+.tout{
+
+}
+.image {	/*centrage de l'image*/
+	text-align: center;
+}
+.align{ /*Alignement des images quand il y en a 2*/
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content : center;
+	margin-left: 195px;
+}
+.titre {	/*Titre des parties*/
+	color: #01F3FB;
+	font-size: 26px;
+}
+
+
+/*Menu Vertical qui mène aux différentes parties*/
+
+.ancres{ /*caractéristiques de toute la balise*/
+	float: left;
+	border-style: solid white;
+	box-shadow: 4px 6px 10px white;
+	width: 175px;
+	position: fixed;
+	font-size: 15px;
+	padding-bottom: 20px;
+	margin-top: 100px;
+}
+.menu_verti, .menu_verti ul {	/*la class menu_verti et menu_verti ul sont sélectionnés*/
+	padding:0;
+	margin:0;
+	list-style:none;
+	width: 180px; /* seule ligne rajoutée */
+}
+.menu_verti li {	/*juste les li sont sélectionnées*/
+	background: none; /*le fond des lignes li*/
+}
+.menu_verti a {	/*les liens a sont sélectionnés*/
+	display:block;
+	text-decoration: none;
+	color: #01F3FB;
+	padding-top: 10px;
+	padding-left: 25px;
+}
+.menu_verti ul { /*juste les ul sont sélectionnés*/
+	position: absolute;
+	left:-999em; /* pour éviter que les liens se superposent */
+}
+.menu_verti li:hover ul { /*affichage des liens au survol*/
+	top: 0;
+	left: 180px;
+	background-color: black;
+	border: solid, 1px;
+}
+
+/*Menu Horizontal*/
+.menu_horizontal li{
+	list-style: none;
+	display: inline;
+	padding-left :10px;
+	font-size: 15px;
+}
+.menu_horizontal {
+	padding-left :10px;
+	text-align: center;
+}

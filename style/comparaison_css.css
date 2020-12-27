@@ -1,0 +1,74 @@
+*{ 	
+	font-family:"Comic Sans MS", Arial;
+}
+
+body {
+	background-image: url("../img/fond2.jpg");
+	background-position: 100% 100%; /* le fond prend tout l'écran */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+header{
+	border: 5px;
+	border-color: white;
+	border-style: solid;
+	font-size: 35px;
+	text-shadow: 2px 2px 4px red;
+	box-shadow: 4px 6px 10px white;
+}
+
+h1 {	
+	color:red;
+	font-style: bold underline;
+	text-align: center;
+}
+
+/*TABLEAU*/
+table{
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-size: 15px;
+	border-collapse: collapse;
+}
+th{
+	justify-content: center;
+	padding-right: 5px;
+	padding-left: 5px;
+	border: 3px solid black;
+}
+td{
+	justify-content: center;
+	padding-right: 5px;
+	padding-left: 5px;
+	border: 3px solid black;
+}
+
+
+p{	margin-left: 50px;
+	color: white;
+	font-size: 15px;
+}	
+
+/*Liens*/
+a:visited{ /*les liens avec <a> restent bleus même après avoir déjà utilisé le lien*/
+	color: #2497FB; 
+} 
+a{
+	color: #2497FB;
+}
+
+
+/*Menu Horizontal*/
+.menu_horizontal li{
+	list-style: none;
+	display: inline;
+	padding-left :10px;
+	font-size: 15px;
+}
+.menu_horizontal {
+	padding-left :10px;
+	text-align: center;
+}
